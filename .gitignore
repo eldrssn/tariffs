@@ -1,0 +1,45 @@
+# Node.js dependencies
+node_modules/
+package-lock.json
+
+# Build output
+dist/
+
+# Webpack cache
+.cache/
+*.cache
+
+# TypeScript compiled files
+*.tsbuildinfo
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE and editor-specific files
+.vscode/
+.idea/
+*.sublime-workspace
+
+# SASS cache
+.sass-cache/
+
+# MacOS Finder and Trash files
+._*
+.Spotlight-V100
+.Trashes
+
+# Temporary files
+*.tmp
+*.swp
+
+# ESLint cache
+.eslintcache
+
+# Stylelint cache
+.stylelintcache

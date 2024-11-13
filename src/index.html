@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Актуальные тарифы</title>
+    <link
+      rel="preload"
+      href="./assets/fonts/SFUIDisplay-Medium.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="./assets/fonts/SFUIDisplay-Semibold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="./assets/fonts/SFUIDisplay-Bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <section class="tariffs">
+      <header>
+        <h3 class="tariffs__subtitle">Выберите лучший</h3>
+        <h1 class="tariffs__title">Актуальные тарифы</h1>
+      </header>
+
+      <div class="tariffs__cards">
+        <!-- Консультация -->
+        <article class="tariff-card tariff-card--consultation">
+          <div class="tariff-card__heading">
+            <div class="tariff-card__icon">
+              <img
+                src="./assets/images/consultation.svg"
+                alt="Консультация"
+                width="24px"
+                height="24px"
+              />
+            </div>
+            <h2 class="tariff-card__title">Консультация</h2>
+            <p class="tariff-card__subtitle">Основные вопросы и направления</p>
+          </div>
+          <div class="tariff-card__info">
+            <div class="tariff-card__price">
+              <div class="tariff-card__price-value">Бесплатно</div>
+              <div class="tariff-card__price-description">В любое время</div>
+              <p id="description-consultation" class="visually-hidden">
+                Бесплатная консультация. Вы сможете задать основные вопросы,
+                узнать о процедуре и получить рекомендации.
+              </p>
+              <button
+                class="tariff-card__button select-button"
+                data-tariff-name="Консультация"
+                aria-describedby="description-consultation"
+              >
+                Выбрать
+              </button>
+            </div>
+          </div>
+          <ul class="tariff-card__features">
+            <li>В любое удобное время</li>
+            <li>Расскажем о всех нюансах процедуры</li>
+            <li>Предложим варианты решения вашей проблемы</li>
+            <li>Подготовим рекомендации</li>
+          </ul>
+        </article>
+
+        <!-- Базовый тариф -->
+        <article class="tariff-card tariff-card--basic">
+          <div class="tariff-card__badge">Лучший тариф</div>
+          <div class="tariff-card__heading">
+            <div class="tariff-card__icon">
+              <img
+                src="./assets/images/basic.svg"
+                alt="Консультация"
+                width="24px"
+                height="24px"
+              />
+            </div>
+            <h2 class="tariff-card__title">Базовый тариф</h2>
+            <p class="tariff-card__subtitle">
+              От любого банка без процентов и переплат
+            </p>
+          </div>
+
+          <div class="tariff-card__info">
+            <div class="tariff-card__price">
+              <div class="tariff-card__price-value">65 000 ₽</div>
+              <div class="tariff-card__price-description">
+                Единоразовый платеж
+              </div>
+
+              <p id="description-basic" class="visually-hidden">
+                Базовый тариф включает полный пакет услуг: сбор документов,
+                взаимодействие с финансовым управляющим, контроль процедуры и
+                поддержку на всех этапах.
+              </p>
+              <button
+                class="tariff-card__button select-button"
+                data-tariff-name="Базовый тариф"
+                aria-describedby="description-basic"
+              >
+                Выбрать
+              </button>
+            </div>
+            <div class="tariff-card__promo">
+              <p class="tariff-card__promo-text">Гарантия<br />списания</p>
+              <span class="tariff-card__tooltip">
+                <img
+                  class="tariff-card__tooltip-icon"
+                  src="./assets/images/question.svg"
+                  alt="Дополнительная информация"
+                />
+                <div class="tariff-card__tooltip-text" role="tooltip">
+                  Для Вашего спокойствия мы гарантируем возврат оплаты в случае
+                  отсутствия списания долгов после процедуры.
+                </div>
+              </span>
+            </div>
+          </div>
+
+          <ul class="tariff-card__features">
+            <li>Сбор всех необходимых документов</li>
+            <li>Взаимодействие с финансовым управляющим</li>
+            <li>Контроль процедуры реализации имущества</li>
+            <li>
+              Поддержка и сопровождение клиента на всех этапах банкротства
+            </li>
+          </ul>
+        </article>
+
+        <!-- Рассрочка -->
+        <article class="tariff-card tariff-card--installment">
+          <div class="tariff-card__timer" id="timer" aria-live="polite">
+            00:00:00
+          </div>
+          <div class="tariff-card__heading">
+            <div class="tariff-card__icon">
+              <img
+                src="./assets/images/installment.svg"
+                alt="Консультация"
+                width="24px"
+                height="24px"
+              />
+            </div>
+            <h2 class="tariff-card__title">Рассрочка</h2>
+            <p class="tariff-card__subtitle">
+              От любого банка без процентов и переплат
+            </p>
+          </div>
+          <div class="tariff-card__info">
+            <div class="tariff-card__price">
+              <div class="tariff-card__price-value">3880 ₽ / мес.</div>
+              <div class="tariff-card__price-description">На 24 месяца</div>
+              <p id="description-installment" class="visually-hidden">
+                Тариф "Рассрочка" предоставляет возможность оплатить услуги в
+                рассрочку с гибкими условиями, фиксированной суммой и гарантией
+                возврата средств.
+              </p>
+              <button
+                class="tariff-card__button select-button"
+                data-tariff-name="Рассрочка"
+                id="offer-button"
+                aria-describedby="description-installment"
+              >
+                Выбрать
+              </button>
+            </div>
+            <div class="tariff-card__promo">
+              <p class="tariff-card__promo-text">Гарантия<br />списания</p>
+              <span class="tariff-card__tooltip">
+                <img
+                  class="tariff-card__tooltip-icon"
+                  src="./assets/images/question.svg"
+                  alt="Дополнительная информация"
+                />
+                <div class="tariff-card__tooltip-text" role="tooltip">
+                  Для Вашего спокойствия мы гарантируем возврат оплаты в случае
+                  отсутствия списания долгов после процедуры.
+                </div>
+              </span>
+            </div>
+          </div>
+          <ul class="tariff-card__features">
+            <li>
+              Удобные варианты рассрочки
+              <p class="tariff-card__banks">
+                <span class="tariff-card__banks-item">
+                  <img
+                    src="./assets/images/vtb.png"
+                    alt="ВТБ"
+                    width="14px"
+                    height="8px"
+                  />
+                </span>
+                <span class="tariff-card__banks-item">
+                  <img
+                    src="./assets/images/sber.png"
+                    alt="Сбер"
+                    width="13px"
+                    height="12px"
+                  />
+                </span>
+                <span class="tariff-card__banks-item">
+                  <img
+                    src="./assets/images/alfa.png"
+                    alt="Альфа-банк"
+                    width="7px"
+                    height="10px"
+                  />
+                </span>
+              </p>
+            </li>
+            <li>Комфортные условия оплаты</li>
+            <li>Фиксированная сумма</li>
+            <li>Гарантия возврата средств</li>
+            <li>Остальное, что и в базовом тарифе</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <script src="index.ts"></script>
+  </body>
+</html>

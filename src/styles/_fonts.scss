@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'SF UI Display';
+  src: url('../assets/fonts/SFUIDisplay-Bold.woff2') format('woff2'),
+    url('../assets/fonts/SFUIDisplay-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF UI Display';
+  src: url('../assets/fonts/SFUIDisplay-Medium.woff2') format('woff2'),
+    url('../assets/fonts/SFUIDisplay-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF UI Display';
+  src: url('../assets/fonts/SFUIDisplay-Semibold.woff2') format('woff2'),
+    url('../assets/fonts/SFUIDisplay-Semibold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mazzard';
+  src: url('../assets/fonts/MazzardM-Bold.woff2') format('woff2'),
+    url('../assets/fonts/MazzardM-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
